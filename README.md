@@ -1,21 +1,13 @@
 # Loan Originating Service (LOS) Deploy : 
 
-The backend application has to be built without testing using below command.
+Configure ***application.properties*** to connect backend with MySQL DB.
+```
+spring.datasource.url= jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${DB_NAME}?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8
+spring.datasource.username= ${MYSQL_USER}
+spring.datasource.password= ${MYSQL_PASSWORD}
+```
+To fetch data from the backend, mention only the upstream module for backend from ```default.conf```.
 
-```
-mvn clean package -DskipTests
-```
-So do for the frontend application too.
-
-```
-npm run build-only
-```
-
-DB connection for the backend would be like this.
-```
-jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${DB_NAME}?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8
-```
-For backend URL to fetch data, mention only the upstream for backend from the 'default.conf'.
 ```
 '/api'
 ```
