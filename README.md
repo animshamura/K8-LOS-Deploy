@@ -23,9 +23,13 @@ docker compose up
 
 Change the directory to k8.
 ```
-cd k8
+cd k8 
 ```
 Apply all the menifest files in ```k8``` folder.
 ```
 kubectl apply -f .
 ```
+
+**Note**
+- Port mapping has to be done perfectly. Double check whether the mapped port is matching with the container port or not.
+- Environment variables have to be mentioned in the docker-compose and k8 menifest files. 
