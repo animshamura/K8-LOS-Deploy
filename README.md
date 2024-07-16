@@ -1,7 +1,12 @@
 # Loan Originating Service (LOS) Deploy : 
 
-For building springboot application tests have to skipped by following command. 
+The backend application has to be built without testing using below command.
 
 ```
 mvn clean package -DskipTests
+```
+So do for the frontend application too.
+
+```
+npm run build-only
 ```
