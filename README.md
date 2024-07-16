@@ -12,14 +12,14 @@ To fetch data from the backend, mention only the upstream module for backend fro
 '/api'
 ```
 
-## Docker 
+## Docker :
 
 Up the docker-compose file.  
 ```
 docker compose up
 ```
 
-## Kubernetes
+## Kubernetes :
 
 Change the directory to k8.
 ```
