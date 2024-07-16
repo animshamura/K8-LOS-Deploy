@@ -11,3 +11,21 @@ To fetch data from the backend, mention only the upstream module for backend fro
 ```
 '/api'
 ```
+
+## Docker 
+
+Up the docker-compose file.  
+```
+docker compose up
+```
+
+## Kubernetes
+
+Change the directory to k8.
+```
+cd k8
+```
+Apply all the menifest files in ```k8``` folder.
+```
+kubectl apply -f .
+```
