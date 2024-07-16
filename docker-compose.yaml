@@ -15,7 +15,7 @@ services:
     image: animshamura/los-be
     restart: always
     environment:
-      - DB_NAME=test
+      - MYSQL_DATABASE=test
       - MYSQL_USER=anim
       - MYSQL_PASSWORD=1234
       - MYSQL_HOST=mysql-svc
