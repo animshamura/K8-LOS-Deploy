@@ -2,7 +2,7 @@
 
 Configure ```application.properties``` to connect backend with MySQL DB.
 ```
-spring.datasource.url= jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${DB_NAME}?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8
+spring.datasource.url= jdbc:mysql://${MYSQL_HOST}:${MYSQL_PORT}/${MYSQL_DATABASE}?useUnicode=yes&characterEncoding=UTF-8&characterSetResults=UTF-8
 spring.datasource.username= ${MYSQL_USER}
 spring.datasource.password= ${MYSQL_PASSWORD}
 ```
